@@ -20,6 +20,8 @@
 		7D8DA9FB286CB24600ADC671 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8DA9F9286CB24600ADC671 /* LoginViewController.xib */; };
 		7D8DA9FD286CB25E00ADC671 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9FC286CB25E00ADC671 /* LoginViewModelProtocol.swift */; };
 		7D8DA9FF286CB26F00ADC671 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9FE286CB26F00ADC671 /* LoginViewModel.swift */; };
+		7D8DAA03286CB6CB00ADC671 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */; };
+		7D8DAA06286CB75D00ADC671 /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */; };
 		B4858B1739EC79A41CF622A4 /* Pods_iOSExamTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		7D8DA9F9286CB24600ADC671 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		7D8DA9FC286CB25E00ADC671 /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
 		7D8DA9FE286CB26F00ADC671 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
 		BC2ED8F006AE3B7D52BCEA87 /* Pods-iOSExamTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExamTest.release.xcconfig"; path = "Target Support Files/Pods-iOSExamTest/Pods-iOSExamTest.release.xcconfig"; sourceTree = "<group>"; };
 		F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSExamTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,7 +135,8 @@
 		7D8DA9BF286CADCA00ADC671 /* iOSExamTest */ = {
 			isa = PBXGroup;
 			children = (
-				7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */,
+				7D8DAA04286CB74900ADC671 /* AppDelegate */,
+				7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */,
 				7D8DA9C2286CADCA00ADC671 /* SceneDelegate.swift */,
 				7D8DA9C4286CADCA00ADC671 /* ViewController.swift */,
 				7D8DA9C6286CADCA00ADC671 /* Main.storyboard */,
@@ -225,6 +230,15 @@
 				7D8DA9F9286CB24600ADC671 /* LoginViewController.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		7D8DAA04286CB74900ADC671 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */,
+				7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +350,7 @@
 			files = (
 				7D8DA9FB286CB24600ADC671 /* LoginViewController.xib in Resources */,
 				7D8DA9CD286CADCA00ADC671 /* LaunchScreen.storyboard in Resources */,
+				7D8DAA03286CB6CB00ADC671 /* GoogleService-Info.plist in Resources */,
 				7D8DA9CA286CADCA00ADC671 /* Assets.xcassets in Resources */,
 				7D8DA9C8286CADCA00ADC671 /* Main.storyboard in Resources */,
 			);
@@ -421,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8DAA06286CB75D00ADC671 /* AppDelegate+Firebase.swift in Sources */,
 				7D8DA9FA286CB24600ADC671 /* LoginViewController.swift in Sources */,
 				7D8DA9C5286CADCA00ADC671 /* ViewController.swift in Sources */,
 				7D8DA9FF286CB26F00ADC671 /* LoginViewModel.swift in Sources */,
