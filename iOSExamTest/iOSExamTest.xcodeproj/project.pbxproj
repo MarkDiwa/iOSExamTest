@@ -19,6 +19,16 @@
 		7D8DA9FF286CB26F00ADC671 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9FE286CB26F00ADC671 /* LoginViewModel.swift */; };
 		7D8DAA03286CB6CB00ADC671 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */; };
 		7D8DAA06286CB75D00ADC671 /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */; };
+		7D8DAA08286CBA5E00ADC671 /* UserInputValidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA07286CBA5E00ADC671 /* UserInputValidity.swift */; };
+		7D8DAA0B286CBAD300ADC671 /* FirebaseAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA0A286CBAD300ADC671 /* FirebaseAuthenticationManager.swift */; };
+		7D8DAA0E286CBE2700ADC671 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA0D286CBE2700ADC671 /* UserCredentials.swift */; };
+		7D8DAA11286CBEA100ADC671 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA10286CBEA100ADC671 /* Closures.swift */; };
+		7D8DAA16286CC06300ADC671 /* UIVIewController+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA15286CC06300ADC671 /* UIVIewController+ErrorHandling.swift */; };
+		7D8DAA18286CC52C00ADC671 /* AppDelegate+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA17286CC52C00ADC671 /* AppDelegate+RootViewController.swift */; };
+		7D8DAA1B286CC58700ADC671 /* UIWindow+RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA1A286CC58700ADC671 /* UIWindow+RootController.swift */; };
+		7D8DAA1D286CD2C900ADC671 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA1C286CD2C900ADC671 /* Notifications.swift */; };
+		7D8DAA1F286CD37600ADC671 /* AppDelegate+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA1E286CD37600ADC671 /* AppDelegate+Notifications.swift */; };
+		7D8DAA21286CD45700ADC671 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DAA20286CD45700ADC671 /* UIViewController+Utils.swift */; };
 		B4858B1739EC79A41CF622A4 /* Pods_iOSExamTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +67,16 @@
 		7D8DA9FE286CB26F00ADC671 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
+		7D8DAA07286CBA5E00ADC671 /* UserInputValidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputValidity.swift; sourceTree = "<group>"; };
+		7D8DAA0A286CBAD300ADC671 /* FirebaseAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationManager.swift; sourceTree = "<group>"; };
+		7D8DAA0D286CBE2700ADC671 /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		7D8DAA10286CBEA100ADC671 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		7D8DAA15286CC06300ADC671 /* UIVIewController+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+ErrorHandling.swift"; sourceTree = "<group>"; };
+		7D8DAA17286CC52C00ADC671 /* AppDelegate+RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+RootViewController.swift"; sourceTree = "<group>"; };
+		7D8DAA1A286CC58700ADC671 /* UIWindow+RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+RootController.swift"; sourceTree = "<group>"; };
+		7D8DAA1C286CD2C900ADC671 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		7D8DAA1E286CD37600ADC671 /* AppDelegate+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Notifications.swift"; sourceTree = "<group>"; };
+		7D8DAA20286CD45700ADC671 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		BC2ED8F006AE3B7D52BCEA87 /* Pods-iOSExamTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExamTest.release.xcconfig"; path = "Target Support Files/Pods-iOSExamTest/Pods-iOSExamTest.release.xcconfig"; sourceTree = "<group>"; };
 		F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSExamTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				7D8DAA04286CB74900ADC671 /* AppDelegate */,
+				7D8DAA12286CC03400ADC671 /* Extensions */,
+				7D8DAA0F286CBE8400ADC671 /* Helpers */,
+				7D8DA9F1286CB1C000ADC671 /* Modules */,
 				7D8DAA02286CB6CB00ADC671 /* GoogleService-Info.plist */,
 				7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */,
 				7D8DA9CB286CADCA00ADC671 /* LaunchScreen.storyboard */,
@@ -158,6 +181,7 @@
 		7D8DA9F1286CB1C000ADC671 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7D8DAA09286CBA6300ADC671 /* Shared */,
 				7D8DA9F4286CB1E400ADC671 /* Home */,
 				7D8DA9F3286CB1DE00ADC671 /* Profile */,
 				7D8DA9F2286CB1D200ADC671 /* Authentication */,
@@ -191,6 +215,7 @@
 		7D8DA9F5286CB21600ADC671 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7D8DAA0C286CBE1400ADC671 /* Models */,
 				7D8DAA00286CB5FA00ADC671 /* UI */,
 			);
 			path = Login;
@@ -219,8 +244,70 @@
 			children = (
 				7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */,
 				7D8DAA05286CB75D00ADC671 /* AppDelegate+Firebase.swift */,
+				7D8DAA17286CC52C00ADC671 /* AppDelegate+RootViewController.swift */,
+				7D8DAA1E286CD37600ADC671 /* AppDelegate+Notifications.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7D8DAA09286CBA6300ADC671 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA07286CBA5E00ADC671 /* UserInputValidity.swift */,
+				7D8DAA0A286CBAD300ADC671 /* FirebaseAuthenticationManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7D8DAA0C286CBE1400ADC671 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA0D286CBE2700ADC671 /* UserCredentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D8DAA0F286CBE8400ADC671 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA10286CBEA100ADC671 /* Closures.swift */,
+				7D8DAA1C286CD2C900ADC671 /* Notifications.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7D8DAA12286CC03400ADC671 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA13286CC04C00ADC671 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D8DAA13286CC04C00ADC671 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA19286CC53A00ADC671 /* UIWindow */,
+				7D8DAA14286CC05300ADC671 /* UIVIewController */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7D8DAA14286CC05300ADC671 /* UIVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA15286CC06300ADC671 /* UIVIewController+ErrorHandling.swift */,
+				7D8DAA20286CD45700ADC671 /* UIViewController+Utils.swift */,
+			);
+			path = UIVIewController;
+			sourceTree = "<group>";
+		};
+		7D8DAA19286CC53A00ADC671 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DAA1A286CC58700ADC671 /* UIWindow+RootController.swift */,
+			);
+			path = UIWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +505,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8DAA06286CB75D00ADC671 /* AppDelegate+Firebase.swift in Sources */,
+				7D8DAA18286CC52C00ADC671 /* AppDelegate+RootViewController.swift in Sources */,
 				7D8DA9FA286CB24600ADC671 /* LoginViewController.swift in Sources */,
+				7D8DAA16286CC06300ADC671 /* UIVIewController+ErrorHandling.swift in Sources */,
+				7D8DAA1F286CD37600ADC671 /* AppDelegate+Notifications.swift in Sources */,
+				7D8DAA0B286CBAD300ADC671 /* FirebaseAuthenticationManager.swift in Sources */,
 				7D8DA9FF286CB26F00ADC671 /* LoginViewModel.swift in Sources */,
 				7D8DA9C1286CADCA00ADC671 /* AppDelegate.swift in Sources */,
+				7D8DAA1D286CD2C900ADC671 /* Notifications.swift in Sources */,
 				7D8DA9FD286CB25E00ADC671 /* LoginViewModelProtocol.swift in Sources */,
+				7D8DAA1B286CC58700ADC671 /* UIWindow+RootController.swift in Sources */,
+				7D8DAA08286CBA5E00ADC671 /* UserInputValidity.swift in Sources */,
+				7D8DAA0E286CBE2700ADC671 /* UserCredentials.swift in Sources */,
+				7D8DAA11286CBEA100ADC671 /* Closures.swift in Sources */,
+				7D8DAA21286CD45700ADC671 /* UIViewController+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
