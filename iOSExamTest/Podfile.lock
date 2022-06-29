@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.9)
+  - Kingfisher (7.2.0)
+  - SwiftLint (0.46.5)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
+  SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
+
+PODFILE CHECKSUM: c4d3332f7934b77499fedaca4aff876f31363059
+
+COCOAPODS: 1.11.3
