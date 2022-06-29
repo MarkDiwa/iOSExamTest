@@ -130,6 +130,7 @@
 				7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */,
 				7D8DA9CB286CADCA00ADC671 /* LaunchScreen.storyboard */,
 				7D8DA9CE286CADCA00ADC671 /* Info.plist */,
+				7D8DA9F1286CB1C000ADC671 /* Modules */,
 			);
 			path = iOSExamTest;
 			sourceTree = "<group>";
@@ -149,6 +150,37 @@
 				7D8DA9E3286CADCB00ADC671 /* iOSExamTestUITestsLaunchTests.swift */,
 			);
 			path = iOSExamTestUITests;
+			sourceTree = "<group>";
+		};
+		7D8DA9F1286CB1C000ADC671 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DA9F4286CB1E400ADC671 /* Home */,
+				7D8DA9F3286CB1DE00ADC671 /* Profile */,
+				7D8DA9F2286CB1D200ADC671 /* Authentication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7D8DA9F2286CB1D200ADC671 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7D8DA9F3286CB1DE00ADC671 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7D8DA9F4286CB1E400ADC671 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
