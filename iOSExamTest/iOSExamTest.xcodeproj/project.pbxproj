@@ -95,7 +95,6 @@
 				2CE7DCADEABBA4E99144E322 /* Pods-iOSExamTest.debug.xcconfig */,
 				BC2ED8F006AE3B7D52BCEA87 /* Pods-iOSExamTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,6 +163,7 @@
 				7D8DA9BA286CADCA00ADC671 /* Frameworks */,
 				7D8DA9BB286CADCA00ADC671 /* Resources */,
 				4ECAC146AB9DBF013680FC49 /* [CP] Embed Pods Frameworks */,
+				7D8DA9F0286CB0D700ADC671 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -297,6 +297,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSExamTest/Pods-iOSExamTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7D8DA9F0286CB0D700ADC671 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		F7194877EE9B733DB7365707 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -509,6 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSExamTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

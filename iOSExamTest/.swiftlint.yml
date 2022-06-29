@@ -1,0 +1,27 @@
+disabled_rules:
+  - force_try
+  - identifier_name
+  - todo
+  - trailing_comma
+  - trailing_whitespace
+  - type_body_length
+# These are paths to ignore during linting. Takes precedence over `included`.
+excluded:
+  - Pods
+  - Vendors
+  - Tests
+  - UITests
+  
+included: 
+  - iOSExamTest
+  
+force_cast: warning
+identifier_name:
+  excluded:
+    - id
+line_length:
+  ignores_comments: true
+  warning: 120
+  error: 180 
+vertical_whitespace:
+  max_empty_lines: 2
