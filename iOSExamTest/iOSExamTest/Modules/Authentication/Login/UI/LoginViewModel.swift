@@ -14,7 +14,12 @@ class LoginViewModel: LoginViewModelProtocol {}
 
 private extension LoginViewModel {
     func handleLoginSuccess(onCompletion: VoidResult?) -> SingleResult<AuthDataResult?> {
-        return { _ in
+        return { apiResult in
+            
+            guard let authResult = apiResult else { return }
+            App.shared.user = User(id: authResult.user.uid,
+                                   name: "",
+                                   email: authResult.user.email ?? "")
             NotificationCenter
                 .default
                 .post(name: .userDidLogin,
@@ -26,7 +31,6 @@ private extension LoginViewModel {
     
     func handleRegistrationSuccess(onCompletion: VoidResult?) -> SingleResult<AuthDataResult?> {
         return { _ in
-            
             onCompletion?()
         }
     }

@@ -76,11 +76,3 @@ private extension LoginViewController {
         }
     }
 }
-
-
-class DashboardController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
-    }
-}

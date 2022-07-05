@@ -10,7 +10,7 @@ import UIKit
 
 extension AppDelegate {
     func setupInitialViewController() {
-        presentDashboard()
+        presentLoginViewController()
         
         window?.makeKeyAndVisible()
     }
