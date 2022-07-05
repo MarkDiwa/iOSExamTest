@@ -10,7 +10,7 @@ import UIKit
 
 extension AppDelegate {
     func setupInitialViewController() {
-        presentLoginViewController()
+        presentDashboard()
         
         window?.makeKeyAndVisible()
     }
@@ -25,7 +25,8 @@ extension AppDelegate {
     
     @objc
     func presentDashboard() {
-        let vc = DashboardController()
-        window?.setRootViewControllerAnimated(vc)
+        let vc = DashboardViewController()
+        let nc = UINavigationController(rootViewController: vc)
+        window?.setRootViewControllerAnimated(nc)
     }
 }

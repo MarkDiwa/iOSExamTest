@@ -7,8 +7,10 @@ target 'iOSExamTest' do
   pod 'Kingfisher'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftLint'
+  pod 'GrowingTextView', '0.7.2'
   # Firebase
   pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 end
 
 post_install do |installer|

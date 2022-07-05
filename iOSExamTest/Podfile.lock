@@ -32,6 +32,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.7.0)"
   - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
+  - GrowingTextView (0.7.2)
   - GTMSessionFetcher/Core (1.7.0)
   - IQKeyboardManagerSwift (6.5.9)
   - Kingfisher (7.2.0)
@@ -45,6 +46,7 @@ PODS:
 
 DEPENDENCIES:
   - FirebaseAuth
+  - GrowingTextView (= 0.7.2)
   - IQKeyboardManagerSwift
   - Kingfisher
   - SwiftLint
@@ -56,6 +58,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - GoogleDataTransport
     - GoogleUtilities
+    - GrowingTextView
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
     - Kingfisher
@@ -69,6 +72,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: c2836d254a8f0bbb4121ff18f2c2ea39d118fd08
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
@@ -76,6 +80,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
 
-PODFILE CHECKSUM: d4151428d24b94f8f53db47861c6cc1965e692d5
+PODFILE CHECKSUM: 5da00f2cf7c5f441b7579b378bdfef31e451b717
 
 COCOAPODS: 1.11.3
