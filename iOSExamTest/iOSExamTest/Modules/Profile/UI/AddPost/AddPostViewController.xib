@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPostViewController" customModule="iOSExamTest" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="CXn-C3-p7J" id="fAp-hu-j9j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CXn-C3-p7J" customClass="GrowingTextView" customModule="GrowingTextView">
+                    <rect key="frame" x="16" y="60" width="382" height="720"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiL-xr-7VM">
+                    <rect key="frame" x="16" y="796" width="382" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="che-yh-qdy"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Post"/>
+                    <connections>
+                        <action selector="addPostButtonTapped:" destination="-1" eventType="touchUpInside" id="WDM-nF-m9R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qiL-xr-7VM" firstAttribute="top" secondItem="CXn-C3-p7J" secondAttribute="bottom" constant="16" placeholder="YES" id="A1Z-fs-Gvr"/>
+                <constraint firstItem="CXn-C3-p7J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Fon-Wd-1yx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qiL-xr-7VM" secondAttribute="bottom" constant="16" id="NpO-gy-VME"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qiL-xr-7VM" secondAttribute="trailing" constant="16" id="OYJ-MV-htq"/>
+                <constraint firstItem="CXn-C3-p7J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Q4Z-DO-oh7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CXn-C3-p7J" secondAttribute="trailing" constant="16" id="W4M-87-19O"/>
+                <constraint firstItem="qiL-xr-7VM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nvd-Ot-VYJ"/>
+                <constraint firstItem="qiL-xr-7VM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CXn-C3-p7J" secondAttribute="bottom" constant="16" id="uiC-fo-JGi"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
