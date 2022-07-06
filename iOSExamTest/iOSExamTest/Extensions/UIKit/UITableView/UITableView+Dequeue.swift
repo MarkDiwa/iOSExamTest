@@ -30,9 +30,3 @@ extension UITableView {
     dequeueReusableCell(withIdentifier: T.reuseIdentifier) as? T
   }
 }
-
-extension Decodable {
-    static func decode(_ dictionary: [String: Any]) throws -> Self {
-      return try JSONDecoder().decode(self, from: (try JSONSerialization.data(withJSONObject: dictionary)))
-    }
-}

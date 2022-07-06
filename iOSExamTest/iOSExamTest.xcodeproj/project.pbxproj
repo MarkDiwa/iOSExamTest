@@ -13,6 +13,7 @@
 		7D0696442871C21F00E4F021 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0696422871C21F00E4F021 /* AddPostViewController.swift */; };
 		7D0696452871C21F00E4F021 /* AddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0696432871C21F00E4F021 /* AddPostViewController.xib */; };
 		7D0A77B62875571000AFCC3D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A77B52875571000AFCC3D /* SettingsViewModel.swift */; };
+		7D0A77BE287571FE00AFCC3D /* Decodable+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A77BD287571FE00AFCC3D /* Decodable+Decode.swift */; };
 		7D8DA9C1286CADCA00ADC671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */; };
 		7D8DA9CA286CADCA00ADC671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */; };
 		7D8DA9D8286CADCB00ADC671 /* iOSExamTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9D7286CADCB00ADC671 /* iOSExamTestTests.swift */; };
@@ -91,6 +92,7 @@
 		7D0696422871C21F00E4F021 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		7D0696432871C21F00E4F021 /* AddPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPostViewController.xib; sourceTree = "<group>"; };
 		7D0A77B52875571000AFCC3D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		7D0A77BD287571FE00AFCC3D /* Decodable+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Decode.swift"; sourceTree = "<group>"; };
 		7D8DA9BD286CADCA00ADC671 /* iOSExamTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -227,6 +229,22 @@
 				7DF2AD73287438A3005874AD /* AddPostViewModel.swift */,
 			);
 			path = AddPost;
+			sourceTree = "<group>";
+		};
+		7D0A77BB287571E900AFCC3D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A77BC287571F100AFCC3D /* Codable */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		7D0A77BC287571F100AFCC3D /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A77BD287571FE00AFCC3D /* Decodable+Decode.swift */,
+			);
+			path = Codable;
 			sourceTree = "<group>";
 		};
 		7D8DA9B4286CADCA00ADC671 = {
@@ -389,6 +407,7 @@
 		7D8DAA12286CC03400ADC671 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7D0A77BB287571E900AFCC3D /* Foundation */,
 				7D8DAA13286CC04C00ADC671 /* UIKit */,
 			);
 			path = Extensions;
@@ -775,6 +794,7 @@
 				7DF2AD922874DC0E005874AD /* HomeViewModel.swift in Sources */,
 				7D8DAA1D286CD2C900ADC671 /* Notifications.swift in Sources */,
 				7D8DA9FD286CB25E00ADC671 /* LoginViewModelProtocol.swift in Sources */,
+				7D0A77BE287571FE00AFCC3D /* Decodable+Decode.swift in Sources */,
 				7D8DAA1B286CC58700ADC671 /* UIWindow+RootController.swift in Sources */,
 				7D8DAA08286CBA5E00ADC671 /* UserInputValidity.swift in Sources */,
 				7D8DAA0E286CBE2700ADC671 /* UserCredentials.swift in Sources */,
