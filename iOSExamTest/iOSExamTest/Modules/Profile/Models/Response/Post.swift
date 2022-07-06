@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct Post {
-    var id: String
-    var posterID: String
+struct Post: Codable {
     var content: String
-    var comments: [Post]
+    var userID: String
+    var username: String
+    var userEmail: String
     var numberOfLikes: Int
+    var firebaseID: String?
 }

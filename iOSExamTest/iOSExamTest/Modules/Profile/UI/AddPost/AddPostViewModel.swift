@@ -24,6 +24,8 @@ extension AddPostViewModel {
         guard let user = App.shared.user else { return }
         let params = AddPostAPIParams(content: content,
                                       userID: user.id,
+                                      username: user.username,
+                                      userEmail: user.email,
                                       numberOfLikes: 0)
         
         api.addPost(params: params,
