@@ -28,7 +28,7 @@ private extension HomeViewModel {
             for document in snapshot.documents {
                 let data = document.data()
                 
-                guard var post = try? Post.decode(data) else { return }
+                guard var post = try? Post.decode(data) else { continue }
                 
                 post.firebaseID = document.documentID
                 self.userFeeds.append(post)

@@ -45,7 +45,7 @@ private extension LoginViewModel {
                 guard
                     let userID = data["id"] as? String,
                     userID == authResult.user.uid
-                else { return }
+                else { continue }
                 
                 App.shared.user = User(id: userID,
                                        username: (data["username"] as? String)  ?? "",
