@@ -83,7 +83,7 @@ private extension LoginViewController {
     }
     
     func handleLoginError() -> ErrorResult {
-        return { [weak self] error in
+        return { [weak self] _ in
             guard let self = self else { return }
             
             self.hideActivityIndicator()
