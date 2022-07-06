@@ -10,3 +10,5 @@ For improvements:
 1. I still have to apply pagination for the user feeds as I'm still figuring it out in Firebase Firestore.
 2. Add Post/Feed detail view controller.
 3. Add Like and Comment Functionality.
+4. Maybe update Linter Rules.
+5. Add chat functionality for fun.
