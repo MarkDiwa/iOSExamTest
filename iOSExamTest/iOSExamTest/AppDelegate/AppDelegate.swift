@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow? = UIWindow()
+    var window: UIWindow?
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupFirebase()
         setupNotificationObservers()
         setupInitialViewController()
+        
+        window?.makeKeyAndVisible()
         return true
     }
 

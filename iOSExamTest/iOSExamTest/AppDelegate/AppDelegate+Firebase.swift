@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import FirebaseAuth
 import FirebaseCore
 
 extension AppDelegate {
     func setupFirebase() {
         FirebaseApp.configure()
+        
+        guard Auth.auth().currentUser != nil else {
+            return
+        }
+        
+        App.shared.retrieveUserDataInStorage()
     }
 }

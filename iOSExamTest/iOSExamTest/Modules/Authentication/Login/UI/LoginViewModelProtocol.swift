@@ -12,11 +12,4 @@ protocol LoginViewModelProtocol {
                password: String,
                onSuccess: @escaping VoidResult,
                onError: @escaping ErrorResult)
-    
-    func register(withEmail email: String,
-                  password: String,
-                  onSuccess: @escaping VoidResult,
-                  onError: @escaping ErrorResult)
-    
-    func validateUserInputs() -> UserInputValidity
 }

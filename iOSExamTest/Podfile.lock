@@ -716,6 +716,7 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - SkyFloatingLabelTextField (3.8.0)
   - SwiftLint (0.46.5)
 
 DEPENDENCIES:
@@ -724,6 +725,7 @@ DEPENDENCIES:
   - GrowingTextView (= 0.7.2)
   - IQKeyboardManagerSwift
   - Kingfisher
+  - SkyFloatingLabelTextField (~> 3.0)
   - SwiftLint
 
 SPEC REPOS:
@@ -746,6 +748,7 @@ SPEC REPOS:
     - Libuv-gRPC
     - nanopb
     - PromisesObjC
+    - SkyFloatingLabelTextField
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -767,8 +770,9 @@ SPEC CHECKSUMS:
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
 
-PODFILE CHECKSUM: 2babff8f01ae2ba4dcd9a6796a850a45972aac1f
+PODFILE CHECKSUM: 87f8ff709b71f1a399b775cebbc34f645d9ca77b
 
 COCOAPODS: 1.11.3

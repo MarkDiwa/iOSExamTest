@@ -5,16 +5,21 @@
 //  Created by Mark Dennis Diwa on 6/30/22.
 //
 
-import Foundation
+import FirebaseAuth
 import UIKit
 
 extension AppDelegate {
     func setupInitialViewController() {
-        presentLoginViewController()
+        window = UIWindow()
+        guard Auth.auth().currentUser != nil else {
+            self.presentLoginViewController()
+            return
+        }
         
-        window?.makeKeyAndVisible()
+        self.presentDashboard()
     }
     
+    @objc
     func presentLoginViewController() {
         let vc = LoginViewController()
         vc.viewModel = LoginViewModel()

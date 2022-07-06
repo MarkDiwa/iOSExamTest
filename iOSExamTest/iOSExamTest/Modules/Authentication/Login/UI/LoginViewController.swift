@@ -9,6 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     var viewModel: LoginViewModelProtocol?
+    var activityView: UIActivityIndicatorView?
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -22,17 +23,19 @@ extension LoginViewController {
         
         setup()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        hideNavigationBar()
+    }
 }
 
 // MARK: - Setup
 
 private extension LoginViewController {
     func setup() {
-        setupNavigationBar()
-    }
-    
-    func setupNavigationBar() {
-        hideNavigationBar()
+        title = "Login"
     }
 }
 
@@ -43,21 +46,28 @@ extension LoginViewController {
         let emailString = emailTextField.text ?? ""
         let passwordString = passwordTextField.text ?? ""
         
+        showActivityIndicator()
         viewModel?.login(withEmail: emailString,
                          password: passwordString,
                          onSuccess: handleLoginSuccess(),
-                         onError: handleError())
+                         onError: handleLoginError())
     }
     
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-        let emailString = emailTextField.text ?? ""
-        let passwordString = passwordTextField.text ?? ""
+        pushRegistrationScreen()
+    }
+}
+
+// MARK: Routers
+
+private extension LoginViewController {
+    func pushRegistrationScreen() {
         
-        viewModel?.register(withEmail: emailString,
-                            password: passwordString,
-                            onSuccess: handleRegisterSuccess(),
-                            onError: handleError())
+        let vc = RegistrationViewController()
+        vc.viewModel = RegistrationViewModel()
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -65,14 +75,33 @@ extension LoginViewController {
 
 private extension LoginViewController {
     func handleLoginSuccess() -> VoidResult {
-        return {
-            print("Login Success")
+        return { [weak self] in
+            guard let self = self else { return }
+            
+            self.hideActivityIndicator()
         }
     }
     
-    func handleRegisterSuccess() -> VoidResult {
-        return {
-            print("Register Success")
+    func handleLoginError() -> ErrorResult {
+        return { [weak self] error in
+            guard let self = self else { return }
+            
+            self.hideActivityIndicator()
         }
+    }
+}
+
+// MARK: - Helpers
+
+private extension LoginViewController {
+    func showActivityIndicator() {
+        activityView = UIActivityIndicatorView(style: .large)
+        activityView?.center = view.center
+        view.addSubview(activityView ?? UIActivityIndicatorView(style: .large))
+        activityView?.startAnimating()
+    }
+    
+    func hideActivityIndicator() {
+        activityView?.stopAnimating()
     }
 }

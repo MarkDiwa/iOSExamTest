@@ -13,20 +13,20 @@ extension AppDelegate {
         let notificationCenter = NotificationCenter.default
         
         setupUserLoggedInObserver(withNotificationCenter: notificationCenter)
-        setupUserCompleteOnboardingObserver(withNotificationCenter: notificationCenter)
+        setupUserLoggedOut(withNotificationCenter: notificationCenter)
     }
     
     private func setupUserLoggedInObserver(withNotificationCenter notifCenter: NotificationCenter) {
         notifCenter.addObserver(self,
-                                       selector: #selector(presentDashboard),
-                                       name: .userDidLogin,
-                                       object: nil)
+                                selector: #selector(presentDashboard),
+                                name: .userDidLogin,
+                                object: nil)
     }
     
-    private func setupUserCompleteOnboardingObserver(withNotificationCenter notifCenter: NotificationCenter) {
+    private func setupUserLoggedOut(withNotificationCenter notifCenter: NotificationCenter) {
         notifCenter.addObserver(self,
-                                selector: #selector(presentDashboard),
-                                name: .userDidCompleteOnboarding,
+                                selector: #selector(presentLoginViewController),
+                                name: .userDidLogout,
                                 object: nil)
     }
     

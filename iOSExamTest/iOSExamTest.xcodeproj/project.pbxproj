@@ -12,6 +12,7 @@
 		7D0696402871C00800E4F021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D06963F2871C00800E4F021 /* LaunchScreen.storyboard */; };
 		7D0696442871C21F00E4F021 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0696422871C21F00E4F021 /* AddPostViewController.swift */; };
 		7D0696452871C21F00E4F021 /* AddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0696432871C21F00E4F021 /* AddPostViewController.xib */; };
+		7D0A77B62875571000AFCC3D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A77B52875571000AFCC3D /* SettingsViewModel.swift */; };
 		7D8DA9C1286CADCA00ADC671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */; };
 		7D8DA9CA286CADCA00ADC671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */; };
 		7D8DA9D8286CADCB00ADC671 /* iOSExamTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8DA9D7286CADCB00ADC671 /* iOSExamTestTests.swift */; };
@@ -46,6 +47,22 @@
 		7DF2AD7228743872005874AD /* AddPostViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD7128743872005874AD /* AddPostViewModelProtocol.swift */; };
 		7DF2AD74287438A4005874AD /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD73287438A3005874AD /* AddPostViewModel.swift */; };
 		7DF2AD7628743987005874AD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD7528743987005874AD /* App.swift */; };
+		7DF2AD7D287464E9005874AD /* PostItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD7B287464E8005874AD /* PostItemTableViewCell.swift */; };
+		7DF2AD7E287464E9005874AD /* PostItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2AD7C287464E9005874AD /* PostItemTableViewCell.xib */; };
+		7DF2AD80287466F9005874AD /* PostItemCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD7F287466F9005874AD /* PostItemCellViewModelProtocol.swift */; };
+		7DF2AD8228746728005874AD /* PostItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD8128746728005874AD /* PostItemCellViewModel.swift */; };
+		7DF2AD872874690E005874AD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD852874690E005874AD /* RegistrationViewController.swift */; };
+		7DF2AD882874690E005874AD /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2AD862874690E005874AD /* RegistrationViewController.xib */; };
+		7DF2AD8B2874DA12005874AD /* UITableViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD8A2874DA12005874AD /* UITableViewCell+Dequeue.swift */; };
+		7DF2AD8E2874DA49005874AD /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD8D2874DA49005874AD /* UITableView+Dequeue.swift */; };
+		7DF2AD902874DBC2005874AD /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD8F2874DBC2005874AD /* HomeViewModelProtocol.swift */; };
+		7DF2AD922874DC0E005874AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD912874DC0E005874AD /* HomeViewModel.swift */; };
+		7DF2AD942874EE34005874AD /* RegistrationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD932874EE34005874AD /* RegistrationViewModelProtocol.swift */; };
+		7DF2AD962874F03E005874AD /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD952874F03E005874AD /* RegistrationViewModel.swift */; };
+		7DF2AD982874F274005874AD /* RegisterProfileAPIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD972874F274005874AD /* RegisterProfileAPIParams.swift */; };
+		7DF2AD9B28753F7F005874AD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD9A28753F7F005874AD /* ProfileViewModel.swift */; };
+		7DF2AD9D28754948005874AD /* ProfileViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD9C28754948005874AD /* ProfileViewModelProtocol.swift */; };
+		7DF2AD9F28755554005874AD /* SettingsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2AD9E28755554005874AD /* SettingsViewModelProtocol.swift */; };
 		B4858B1739EC79A41CF622A4 /* Pods_iOSExamTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +90,7 @@
 		7D06963F2871C00800E4F021 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D0696422871C21F00E4F021 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		7D0696432871C21F00E4F021 /* AddPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPostViewController.xib; sourceTree = "<group>"; };
+		7D0A77B52875571000AFCC3D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		7D8DA9BD286CADCA00ADC671 /* iOSExamTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8DA9C0286CADCA00ADC671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D8DA9C9286CADCA00ADC671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +129,22 @@
 		7DF2AD7128743872005874AD /* AddPostViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModelProtocol.swift; sourceTree = "<group>"; };
 		7DF2AD73287438A3005874AD /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
 		7DF2AD7528743987005874AD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		7DF2AD7B287464E8005874AD /* PostItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemTableViewCell.swift; sourceTree = "<group>"; };
+		7DF2AD7C287464E9005874AD /* PostItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostItemTableViewCell.xib; sourceTree = "<group>"; };
+		7DF2AD7F287466F9005874AD /* PostItemCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		7DF2AD8128746728005874AD /* PostItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemCellViewModel.swift; sourceTree = "<group>"; };
+		7DF2AD852874690E005874AD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		7DF2AD862874690E005874AD /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		7DF2AD8A2874DA12005874AD /* UITableViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Dequeue.swift"; sourceTree = "<group>"; };
+		7DF2AD8D2874DA49005874AD /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		7DF2AD8F2874DBC2005874AD /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		7DF2AD912874DC0E005874AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7DF2AD932874EE34005874AD /* RegistrationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelProtocol.swift; sourceTree = "<group>"; };
+		7DF2AD952874F03E005874AD /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		7DF2AD972874F274005874AD /* RegisterProfileAPIParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProfileAPIParams.swift; sourceTree = "<group>"; };
+		7DF2AD9A28753F7F005874AD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7DF2AD9C28754948005874AD /* ProfileViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelProtocol.swift; sourceTree = "<group>"; };
+		7DF2AD9E28755554005874AD /* SettingsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelProtocol.swift; sourceTree = "<group>"; };
 		BC2ED8F006AE3B7D52BCEA87 /* Pods-iOSExamTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExamTest.release.xcconfig"; path = "Target Support Files/Pods-iOSExamTest/Pods-iOSExamTest.release.xcconfig"; sourceTree = "<group>"; };
 		F067A1334CCEFCF18E045B48 /* Pods_iOSExamTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSExamTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,9 +195,8 @@
 		7D0696372871B9DB00E4F021 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7DF2AD9928753F4F005874AD /* Main */,
 				7D0696412871C20900E4F021 /* AddPost */,
-				7DEA2E76286DEC120095C1B9 /* ProfileViewController.swift */,
-				7DEA2E77286DEC120095C1B9 /* ProfileViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -266,6 +299,8 @@
 		7D8DA9F2286CB1D200ADC671 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				7D8DAA0C286CBE1400ADC671 /* Models */,
+				7DF2AD83287468C2005874AD /* Registration */,
 				7D8DA9F5286CB21600ADC671 /* Login */,
 			);
 			path = Authentication;
@@ -286,6 +321,8 @@
 			children = (
 				7DEA2E72286DEBF80095C1B9 /* HomeViewController.swift */,
 				7DEA2E73286DEBF80095C1B9 /* HomeViewController.xib */,
+				7DF2AD8F2874DBC2005874AD /* HomeViewModelProtocol.swift */,
+				7DF2AD912874DC0E005874AD /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -293,7 +330,6 @@
 		7D8DA9F5286CB21600ADC671 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7D8DAA0C286CBE1400ADC671 /* Models */,
 				7D8DAA00286CB5FA00ADC671 /* UI */,
 			);
 			path = Login;
@@ -324,6 +360,7 @@
 		7D8DAA09286CBA6300ADC671 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7DF2AD77287464A9005874AD /* UI */,
 				7D8DAA07286CBA5E00ADC671 /* UserInputValidity.swift */,
 				7D8DAA0A286CBAD300ADC671 /* FirebaseAuthenticationManager.swift */,
 				7DF2AD6B28742F11005874AD /* FirebaseAPIHelper.swift */,
@@ -360,6 +397,8 @@
 		7D8DAA13286CC04C00ADC671 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DF2AD8C2874DA35005874AD /* UITableView */,
+				7DF2AD892874D9D4005874AD /* UITableViewCell */,
 				7D8DAA19286CC53A00ADC671 /* UIWindow */,
 				7D8DAA14286CC05300ADC671 /* UIVIewController */,
 			);
@@ -404,6 +443,8 @@
 			children = (
 				7DEA2E7B286DEC2A0095C1B9 /* SettingsViewController.swift */,
 				7DEA2E7C286DEC2A0095C1B9 /* SettingsViewController.xib */,
+				7DF2AD9E28755554005874AD /* SettingsViewModelProtocol.swift */,
+				7D0A77B52875571000AFCC3D /* SettingsViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -421,8 +462,90 @@
 			isa = PBXGroup;
 			children = (
 				7DF2AD6F28743443005874AD /* AddPostAPIParams.swift */,
+				7DF2AD972874F274005874AD /* RegisterProfileAPIParams.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		7DF2AD77287464A9005874AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD78287464AF005874AD /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7DF2AD78287464AF005874AD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD79287464B5005874AD /* UITableCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7DF2AD79287464B5005874AD /* UITableCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD7A287464BD005874AD /* PostItemTableCell */,
+			);
+			path = UITableCell;
+			sourceTree = "<group>";
+		};
+		7DF2AD7A287464BD005874AD /* PostItemTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD7B287464E8005874AD /* PostItemTableViewCell.swift */,
+				7DF2AD7C287464E9005874AD /* PostItemTableViewCell.xib */,
+				7DF2AD7F287466F9005874AD /* PostItemCellViewModelProtocol.swift */,
+				7DF2AD8128746728005874AD /* PostItemCellViewModel.swift */,
+			);
+			path = PostItemTableCell;
+			sourceTree = "<group>";
+		};
+		7DF2AD83287468C2005874AD /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD84287468CA005874AD /* UI */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		7DF2AD84287468CA005874AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD852874690E005874AD /* RegistrationViewController.swift */,
+				7DF2AD862874690E005874AD /* RegistrationViewController.xib */,
+				7DF2AD932874EE34005874AD /* RegistrationViewModelProtocol.swift */,
+				7DF2AD952874F03E005874AD /* RegistrationViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7DF2AD892874D9D4005874AD /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD8A2874DA12005874AD /* UITableViewCell+Dequeue.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		7DF2AD8C2874DA35005874AD /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2AD8D2874DA49005874AD /* UITableView+Dequeue.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		7DF2AD9928753F4F005874AD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA2E76286DEC120095C1B9 /* ProfileViewController.swift */,
+				7DEA2E77286DEC120095C1B9 /* ProfileViewController.xib */,
+				7DF2AD9A28753F7F005874AD /* ProfileViewModel.swift */,
+				7DF2AD9C28754948005874AD /* ProfileViewModelProtocol.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +659,8 @@
 				7DEA2E79286DEC120095C1B9 /* ProfileViewController.xib in Resources */,
 				7D8DA9FB286CB24600ADC671 /* LoginViewController.xib in Resources */,
 				7DEA2E75286DEBF80095C1B9 /* HomeViewController.xib in Resources */,
+				7DF2AD7E287464E9005874AD /* PostItemTableViewCell.xib in Resources */,
+				7DF2AD882874690E005874AD /* RegistrationViewController.xib in Resources */,
 				7D8DAA03286CB6CB00ADC671 /* GoogleService-Info.plist in Resources */,
 				7D0696402871C00800E4F021 /* LaunchScreen.storyboard in Resources */,
 				7DEA2E7E286DEC2A0095C1B9 /* SettingsViewController.xib in Resources */,
@@ -626,16 +751,28 @@
 				7D8DAA06286CB75D00ADC671 /* AppDelegate+Firebase.swift in Sources */,
 				7D8DAA18286CC52C00ADC671 /* AppDelegate+RootViewController.swift in Sources */,
 				7D8DA9FA286CB24600ADC671 /* LoginViewController.swift in Sources */,
+				7DF2AD962874F03E005874AD /* RegistrationViewModel.swift in Sources */,
 				7DEA2E74286DEBF80095C1B9 /* HomeViewController.swift in Sources */,
 				7D8DAA16286CC06300ADC671 /* UIVIewController+ErrorHandling.swift in Sources */,
+				7DF2AD7D287464E9005874AD /* PostItemTableViewCell.swift in Sources */,
 				7DF2AD7628743987005874AD /* App.swift in Sources */,
+				7DF2AD942874EE34005874AD /* RegistrationViewModelProtocol.swift in Sources */,
 				7DEA2E7D286DEC2A0095C1B9 /* SettingsViewController.swift in Sources */,
 				7D8DAA1F286CD37600ADC671 /* AppDelegate+Notifications.swift in Sources */,
 				7DEA2E78286DEC120095C1B9 /* ProfileViewController.swift in Sources */,
+				7DF2AD902874DBC2005874AD /* HomeViewModelProtocol.swift in Sources */,
+				7DF2AD9D28754948005874AD /* ProfileViewModelProtocol.swift in Sources */,
+				7DF2AD872874690E005874AD /* RegistrationViewController.swift in Sources */,
+				7D0A77B62875571000AFCC3D /* SettingsViewModel.swift in Sources */,
+				7DF2AD9B28753F7F005874AD /* ProfileViewModel.swift in Sources */,
 				7D8DAA0B286CBAD300ADC671 /* FirebaseAuthenticationManager.swift in Sources */,
+				7DF2AD80287466F9005874AD /* PostItemCellViewModelProtocol.swift in Sources */,
+				7DF2AD8B2874DA12005874AD /* UITableViewCell+Dequeue.swift in Sources */,
 				7D8DA9FF286CB26F00ADC671 /* LoginViewModel.swift in Sources */,
 				7DF2AD7228743872005874AD /* AddPostViewModelProtocol.swift in Sources */,
 				7D8DA9C1286CADCA00ADC671 /* AppDelegate.swift in Sources */,
+				7DF2AD8228746728005874AD /* PostItemCellViewModel.swift in Sources */,
+				7DF2AD922874DC0E005874AD /* HomeViewModel.swift in Sources */,
 				7D8DAA1D286CD2C900ADC671 /* Notifications.swift in Sources */,
 				7D8DA9FD286CB25E00ADC671 /* LoginViewModelProtocol.swift in Sources */,
 				7D8DAA1B286CC58700ADC671 /* UIWindow+RootController.swift in Sources */,
@@ -649,7 +786,10 @@
 				7DF2AD6A2874191A005874AD /* ProfileAPI.swift in Sources */,
 				7DF2AD6C28742F11005874AD /* FirebaseAPIHelper.swift in Sources */,
 				7D0696442871C21F00E4F021 /* AddPostViewController.swift in Sources */,
+				7DF2AD9F28755554005874AD /* SettingsViewModelProtocol.swift in Sources */,
 				7DF2AD74287438A4005874AD /* AddPostViewModel.swift in Sources */,
+				7DF2AD982874F274005874AD /* RegisterProfileAPIParams.swift in Sources */,
+				7DF2AD8E2874DA49005874AD /* UITableView+Dequeue.swift in Sources */,
 				7D06963D2871BA4F00E4F021 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
