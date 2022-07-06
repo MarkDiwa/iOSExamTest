@@ -45,16 +45,19 @@ private extension DashboardViewController {
     
     func setupViewControllers() {
         let vc1 = ProfileViewController()
+        vc1.viewModel = ProfileViewModel()
         vc1.tabBarItem = UITabBarItem(title: "Profile",
                                       image: UIImage(systemName: "person.fill"),
                                       selectedImage: nil)
         
         let vc2 = HomeViewController()
+        vc2.viewModel = HomeViewModel()
         vc2.tabBarItem = UITabBarItem(title: "Home",
                                       image: UIImage(systemName: "house.fill"),
                                       selectedImage: nil)
         
         let vc3 = SettingsViewController()
+        vc3.viewModel = SettingsViewModel()
         vc3.tabBarItem = UITabBarItem(title: "Settings",
                                       image: UIImage(systemName: "gearshape.fill"),
                                       selectedImage: nil)

@@ -10,6 +10,8 @@ import Foundation
 struct AddPostAPIParams: Codable {
     var content: String
     var userID: String
+    var username: String
+    var userEmail: String
     var numberOfLikes: Int
 }
 

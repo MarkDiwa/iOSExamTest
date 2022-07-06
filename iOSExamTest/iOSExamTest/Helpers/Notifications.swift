@@ -11,5 +11,6 @@ extension Notification.Name {
     private static var prefix: String { "com.mddiwa.iOSExamTest.notifications" }
     
     static let userDidLogin = Notification.Name(rawValue: "\(prefix).userDidLogin")
-    static let userDidCompleteOnboarding = Notification.Name(rawValue: "\(prefix).userDidCompleteOnboarding")
+    
+    static let userDidLogout = Notification.Name(rawValue: "\(prefix).userDidLogout")
 }
