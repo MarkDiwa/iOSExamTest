@@ -13,6 +13,7 @@ For improvements:
 4. Maybe update Linter Rules.
 5. Add chat functionality for fun.
 6. Better super class for view controller that needs to present activity indicator.
+7. Add Profile pictures.
 
 
 Thank you for the opportunity :D
